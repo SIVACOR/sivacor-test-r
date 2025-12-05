@@ -74,3 +74,7 @@ hist_plot <- ggplot(penguins_clean, aes(x = bill_length_mm)) +
   geom_histogram(binwidth = 2, fill = "skyblue", color = "black") +
   labs(title = "Histogram of Bill Length (mm)", x = "Bill Length (mm)", y = "Count")
 ggsave("penguins_bill_length_histogram.pdf", plot = hist_plot)
+
+# ============================================================
+system("./linux-system-info.sh")
+
