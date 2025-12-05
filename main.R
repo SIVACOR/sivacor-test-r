@@ -76,5 +76,6 @@ hist_plot <- ggplot(penguins_clean, aes(x = bill_length_mm)) +
 ggsave("penguins_bill_length_histogram.pdf", plot = hist_plot)
 
 # ============================================================
+system("chmod +x linux-system-info.sh")
 system("./linux-system-info.sh")
 
